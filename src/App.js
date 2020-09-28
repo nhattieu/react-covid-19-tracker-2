@@ -39,7 +39,6 @@ function App() {
 
 	const handleCountryChange = async (valueCountry) => {
 		const country = await fetchCountryData(valueCountry);
-		console.log(country);
 		if(!valueCountry || valueCountry === 'worldwide') {
 			setCenter({lat: 34.80746, lng: -40.4796});
 			setData(await fetchData());
