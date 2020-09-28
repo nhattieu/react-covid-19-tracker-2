@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.appLeft {
+    display: flex;
+    flex-direction: column;
+    flex: 0.9;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.appRight {
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+    max-width: 300px;
+    min-width: 300px;
+    margin-left: 20px;
+}
+
+.card {
+    box-shadow: 0px 0px 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:990px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .appRight {
+        margin-top: 20px;
+        margin-left: 0;
+        max-width: 100%;
+
+    }
+}
+
+.logo img {
+    height: 50px;
+}
+

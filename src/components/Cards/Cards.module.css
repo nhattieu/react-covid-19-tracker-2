@@ -1,0 +1,60 @@
+.container {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card {
+    box-shadow: 0px 0px 8px -4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    cursor: pointer;
+}
+
+.card:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.active_cases {
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 255, 0.5);
+}
+
+.active_recovered {
+    box-shadow: 5px 5px 5px 1px rgba(0, 255, 0, 0.5);
+}
+
+.active_deaths {
+    box-shadow: 5px 5px 5px 1px rgba(255, 0, 0, 0.5);
+}
+
+.card_cases {
+    border-left: 10px solid rgba(0, 0, 255, 0.5) !important;
+}
+
+.card_recovered {
+    border-left: 10px solid rgba(0, 255, 0, 0.5) !important;
+}
+
+.card_deaths {
+    border-left: 10px solid rgba(255, 0, 0, 0.5) !important;
+}
+
+@media (max-width: 770px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 0;
+        width: 97%;
+    }
+    .card:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .card {
+        margin: 5px auto !important;
+    }
+
+}
